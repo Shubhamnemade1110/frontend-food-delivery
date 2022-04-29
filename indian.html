@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indian</title>
+    <link rel="stylesheet" href="style.css">
+     <!-- Bootstrap CSS -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<style>
+
+.section-products {
+    padding: 80px 0 54px;
+}
+
+.section-products .header {
+    margin-bottom: 50px;
+}
+
+.section-products .header h3 {
+    font-size: 1rem;
+    color: #fe302f;
+    font-weight: 500;
+}
+
+.section-products .header h2 {
+    font-size: 2.2rem;
+    font-weight: 400;
+    color: #444444; 
+}
+
+.section-products .single-product {
+    margin-bottom: 26px;
+}
+
+.section-products .single-product .part-1 {
+    position: relative;
+    height: 290px;
+    max-height: 290px;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.section-products .single-product .part-1::before {
+		position: absolute;
+		content: "";
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		z-index: -1;
+		transition: all 0.3s;
+}
+
+.section-products .single-product:hover .part-1::before {
+		transform: scale(1.2,1.2) rotate(5deg);
+}
+
+.section-products #product-1 .part-1::before {
+    background: url("https://i.ibb.co/VLq4M11/g-1.jpg") no-repeat center;
+    background-size: cover;
+		transition: all 0.3s;
+}
+
+.section-products #product-2 .part-1::before {
+    background: url("https://i.ibb.co/VLq4M11/g-1.jpg") no-repeat center;
+    background-size: cover;
+}
+
+.section-products #product-3 .part-1::before {
+    background: url("https://i.ibb.co/VLq4M11/g-1.jpg") no-repeat center;
+    background-size: cover;
+}
+
+.section-products #product-4 .part-1::before {
+    background: url("https://i.ibb.co/VLq4M11/g-1.jpg") no-repeat center;
+    
+    background-size: cover;
+}
+
+
+.section-products .single-product .part-1 .discount,
+.section-products .single-product .part-1 .new {
+    position: absolute;
+    top: 15px;
+    left: 20px;
+    color: #ffffff;
+    background-color: #fe302f;
+    padding: 2px 8px;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+}
+
+.section-products .single-product .part-1 .new {
+    left: 0;
+    background-color: #444444;
+}
+
+.section-products .single-product .part-1 ul {
+    position: absolute;
+    bottom: -41px;
+    left: 20px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    opacity: 0;
+    transition: bottom 0.5s, opacity 0.5s;
+}
+
+.section-products .single-product:hover .part-1 ul {
+    bottom: 30px;
+    opacity: 1;
+}
+
+.section-products .single-product .part-1 ul li {
+    display: inline-block;
+    margin-right: 4px;
+}
+
+.section-products .single-product .part-1 ul li a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    background-color: #ffffff;
+    color: #444444;
+    text-align: center;
+    box-shadow: 0 2px 20px rgb(50 50 50 / 10%);
+    transition: color 0.2s;
+}
+
+.section-products .single-product .part-1 ul li a:hover {
+    color: #fe302f;
+}
+
+.section-products .single-product .part-2 .product-title {
+    font-size: 1rem;
+}
+
+.section-products .single-product .part-2 h4 {
+    display: inline-block;
+    font-size: 1rem;
+}
+
+.section-products .single-product .part-2 .product-old-price {
+    position: relative;
+    padding: 0 7px;
+    margin-right: 2px;
+    opacity: 0.6;
+}
+
+.section-products .single-product .part-2 .product-old-price::after {
+    position: absolute;
+    content: "";
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #444444;
+    transform: translateY(-50%);
+}
+
+
+</style>
+<body>
+    
+    <a href="#" id="toTopBtn" class="cd-top text-replace js-cd-top cd-top--is-visible cd-top--fade-out" data-abc="true"></a>
+    <!-- navbar section  -->
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#main"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#cardgroup">Products</a>
+              </li>
+              
+              <li class="nav-item">
+                <a class="nav-link " href="#review" tabindex="-1" aria-disabled="true">Reviews</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="#contact" tabindex="-1" aria-disabled="true">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="./indian.html" tabindex="-1" aria-disabled="true">Indian</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="./chinese.html" tabindex="-1" aria-disabled="true">Chinese</a>
+              </li>
+              <li class="nav-item mx-1">
+                <button class="btn btn-primary" type="submit">Login</button>
+              </li>
+              <li class="nav-item mx-1">
+                <button class="btn btn-primary" type="submit">SignUp</button>
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-primary" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    
+    <!-- end of navbar section  -->
+
+
+<section id="cardgroup">
+  <section class="section-products">
+    <div class="row justify-content-center text-center">
+      <div>
+          <div class="header mytxt">
+              <h3>Indian Product</h3>
+              <h2>Popular Products</h2>
+          </div>
+      </div>
+  </div>
+		<div class="container">
+			
+				<div class="row">
+						<!-- Single Product -->
+						<div class="col-md-6 col-lg-4 col-xl-3">
+								<div id="product-1" class="single-product">
+										<div class="part-1">
+												<ul>
+														<li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+														<li><a href="#"><i class="fa fa-heart"></i></a></li>
+														<li><a href="#"><i class="fa fa-plus"></i></a></li>
+														<li><a href="#"><i class="fa fa-expand"></i></a></li>
+												</ul>
+										</div>
+										<div class="part-2">
+												<h3 class="product-title">Here Product Title</h3>
+												<h4 class="product-old-price">$79.99</h4>
+												<h4 class="product-price">$49.99</h4>
+										</div>
+								</div>
+						</div>
+						<!-- Single Product -->
+						<div class="col-md-6 col-lg-4 col-xl-3">
+								<div id="product-2" class="single-product">
+										<div class="part-1">
+												<span class="discount">15% off</span>
+												<ul>
+														<li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+														<li><a href="#"><i class="fa fa-heart"></i></a></li>
+														<li><a href="#"><i class="fa fa-plus"></i></a></li>
+														<li><a href="#"><i class="fa fa-expand"></i></a></li>
+												</ul>
+										</div>
+										<div class="part-2">
+												<h3 class="product-title">Here Product Title</h3>
+												<h4 class="product-price">$49.99</h4>
+										</div>
+								</div>
+						</div>
+						<!-- Single Product -->
+						<div class="col-md-6 col-lg-4 col-xl-3">
+								<div id="product-3" class="single-product">
+										<div class="part-1">
+												<ul>
+														<li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+														<li><a href="#"><i class="fa fa-heart"></i></a></li>
+														<li><a href="#"><i class="fa fa-plus"></i></a></li>
+														<li><a href="#"><i class="fa fa-expand"></i></a></li>
+												</ul>
+										</div>
+										<div class="part-2">
+												<h3 class="product-title">Here Product Title</h3>
+												<h4 class="product-old-price">$79.99</h4>
+												<h4 class="product-price">$49.99</h4>
+										</div>
+								</div>
+						</div>
+						<!-- Single Product -->
+						<div class="col-md-6 col-lg-4 col-xl-3">
+								<div id="product-4" class="single-product">
+										<div class="part-1">
+												<span class="new">new</span>
+												<ul>
+														<li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+														<li><a href="#"><i class="fa fa-heart"></i></a></li>
+														<li><a href="#"><i class="fa fa-plus"></i></a></li>
+														<li><a href="#"><i class="fa fa-expand"></i></a></li>
+												</ul>
+										</div>
+										<div class="part-2">
+												<h3 class="product-title">Here Product Title</h3>
+												<h4 class="product-price">$49.99</h4>
+										</div>
+								</div>
+						</div>
+						<!-- Single Product -->
+						<div class="col-md-6 col-lg-4 col-xl-3">
+								<div id="product-1" class="single-product">
+										<div class="part-1">
+												<ul>
+														<li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+														<li><a href="#"><i class="fa fa-heart"></i></a></li>
+														<li><a href="#"><i class="fa fa-plus"></i></a></li>
+														<li><a href="#"><i class="fa fa-expand"></i></a></li>
+												</ul>
+										</div>
+										<div class="part-2">
+												<h3 class="product-title">Here Product Title</h3>
+												<h4 class="product-old-price">$79.99</h4>
+												<h4 class="product-price">$49.99</h4>
+										</div>
+								</div>
+						</div>
+						<!-- Single Product -->
+						<div class="col-md-6 col-lg-4 col-xl-3">
+								<div id="product-2" class="single-product">
+										<div class="part-1">
+												<span class="discount">15% off</span>
+												<ul>
+														<li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+														<li><a href="#"><i class="fa fa-heart"></i></a></li>
+														<li><a href="#"><i class="fa fa-plus"></i></a></li>
+														<li><a href="#"><i class="fa fa-expand"></i></a></li>
+												</ul>
+										</div>
+										<div class="part-2">
+												<h3 class="product-title">Here Product Title</h3>
+												<h4 class="product-price">$49.99</h4>
+										</div>
+								</div>
+						</div>
+						<!-- Single Product -->
+						<div class="col-md-6 col-lg-4 col-xl-3">
+								<div id="product-3" class="single-product">
+										<div class="part-1">
+												<ul>
+														<li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+														<li><a href="#"><i class="fa fa-heart"></i></a></li>
+														<li><a href="#"><i class="fa fa-plus"></i></a></li>
+														<li><a href="#"><i class="fa fa-expand"></i></a></li>
+												</ul>
+										</div>
+										<div class="part-2">
+												<h3 class="product-title">Here Product Title</h3>
+												<h4 class="product-old-price">$79.99</h4>
+												<h4 class="product-price">$49.99</h4>
+										</div>
+								</div>
+						</div>
+						<!-- Single Product -->
+						<div class="col-md-6 col-lg-4 col-xl-3">
+								<div id="product-4" class="single-product">
+										<div class="part-1">
+												<span class="new">new</span>
+												<ul>
+														<li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+														<li><a href="#"><i class="fa fa-heart"></i></a></li>
+														<li><a href="#"><i class="fa fa-plus"></i></a></li>
+														<li><a href="#"><i class="fa fa-expand"></i></a></li>
+												</ul>
+										</div>
+										<div class="part-2">
+												<h3 class="product-title">Here Product Title</h3>
+												<h4 class="product-price">$49.99</h4>
+										</div>
+								</div>
+						</div>
+				</div>
+		</div>
+</section>
+</section>   
+
+    <!-- footer section  -->
+    <section id="footer">
+        <footer class="footer">
+            <div class="container">
+              <div class="row">
+                <div class="col-12 col-md-3" style="margin-bottom: 30px;">
+                  <div class="img">
+                      <img class="footer-logo" src="https://bakershoppe.com/assets/img/logo/logo1.png" alt="" srcset="">
+                  </div>
+                  <div class="desc" >
+                    Latest baking supplies, innovative products and new brands, here are the latest baking trends you need to catch on. We tie up with the best bakery suppliers to offer the newest and trending products in our store.
+                  </div>
+                </div>
+                <div class="col">
+                  <h4>MY ACCOUNT</h4>
+                  <ul>
+                    <li><a href="#about-us">My account</a></li>
+                    <li><a href="#about-us">Checkout</a></li>
+                    <li><a href="#about-us">Shop</a></li>
+                    <li><a href="#about-us">Wishlist</a></li>
+                    <li><a href="#about-us">Contact</a></li>
+                    <li><a href="#about-us">Privacy Policy</a></li>
+                  </ul>
+                </div>
+                <div class="col">
+                  <h4>CATEGORIS</h4>
+                  <ul>
+                    <li><a href="#games">Kitchenware</a></li>
+                    <li><a href="#games">Ingredients</a></li>
+                    <li><a href="#gaems">Bakeware</a></li>
+                    <li><a href="#games">Display & Decoration</a></li>
+                    <li><a href="#games">Disposable</a></li>
+                  </ul>
+                </div>
+                <!-- <div class="col">
+                  <h4>Get Help</h4>
+                  <ul>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Contest Information</a></li>
+                    <li><a href="#">Rules</a></li>
+                    <li><a href="#">Guidelines</a></li>
+                  </ul>
+                </div> -->
+                <div class="col">
+                  <h4>COMPANY INFO</h4>
+                    <h5>Address : </h5><h6>
+                        ground floor, No 434, 17th Cross Road, Sector 4,
+                        HSR Layout, Bengaluru, Karnataka 560102
+                        <br>
+                    </h6>
+                    <h5>Phone : </h5><h6>
+                        +91-76766125552
+                    </h6>
+                </div>
+              </div>
+            </div>
+          </footer>
+      </section>
+      <div class="payment-icon container" style="margin-bottom: 10px; margin-top: 10px;">
+        <div class="row">
+            <div class="col-auto me-auto">
+                <div class="social-links">
+                    <a  href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook"></i></a>
+                    <a href="https://twitter.com/?lang=en" target="_blank"><i class="fa fa-instagram"></i></a>
+                    <a href="https://www.instagram.com/" target="_blank"><i class="fa fa-whatsapp"></i></a>
+                </div>
+            </div>
+            <div class="col-auto">
+                <div class="social-links">
+                    <a  href="https://www.facebook.com/" target="_blank"><i class="fa fa-cc-visa"></i></a>
+                    <a  href="https://www.facebook.com/" target="_blank"><i class="fa fa-cc-mastercard"></i></a>
+                    <a href="https://twitter.com/?lang=en" target="_blank"><i class="fa fa-cc-paypal"></i></a>
+                    <a href="https://www.instagram.com/" target="_blank"><i class="fa fa-cc-amazon-pay"></i></a>
+
+                </div>
+            </div>
+          </div>
+      </div>
+      <div class="text-center p-3 copyright" style="background-color: #351916; color:white;">
+        Copyright © 2021 Bakershoppe. All Rights Reserved | Design & Developed by acttconnect.com
+      </div>
+
+</body>
+</html>

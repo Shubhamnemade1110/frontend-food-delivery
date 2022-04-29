@@ -1,0 +1,532 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>signup </title>
+  </head>
+  <script src="script.js"></script>
+  <body>
+    <a href="#" id="toTopBtn" class="cd-top text-replace js-cd-top cd-top--is-visible cd-top--fade-out" data-abc="true"></a>
+    <!-- navbar section  -->
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#main"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#cardgroup">Products</a>
+              </li>
+              
+              <li class="nav-item">
+                <a class="nav-link " href="#review" tabindex="-1" aria-disabled="true">Reviews</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="#contact" tabindex="-1" aria-disabled="true">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="./indian.html" tabindex="-1" aria-disabled="true">Indian</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="./chinese.html" tabindex="-1" aria-disabled="true">Chinese</a>
+              </li>
+              <li class="nav-item mx-1">
+                <button class="btn btn-primary" type= "submit" onclick=" location.href= './login.html'">Login</button>
+              </li>
+              <li class="nav-item mx-1">
+                <button class="btn btn-primary" type="submit" onclick=" location.href= './signup.html ' ">SignUp</button>
+              <li class="nav-item mx-1">
+                <button class="btn btn-primary" type="submit" onclick=" location.href= './contact.html ' ">Contact Us </button>
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-primary" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+
+  
+<div id="main">
+  <div class="container">
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="./amul.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Dairy House</h5>
+            <p>Shop Now</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="./amul.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Dairy House</h5>
+            <p>Shop Now</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="./amul.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Dairy House</h5>
+            <p>Shop Now</p>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+</div>
+
+
+<section id="cardgroup">
+  <section class="section-products">
+    <div class="row justify-content-center text-center">
+      <div>
+          <div class="header mytxt">
+              <h3>Featured Product</h3>
+              <h2>Popular Products</h2>
+          </div>
+      </div>
+  </div>
+		<div class="container">
+			
+				<div class="row">
+						<!-- Single Product -->
+						<div class="col-md-6 col-lg-4 col-xl-3">
+								<div id="product-1" class="single-product">
+										<div class="part-1">
+												<ul>
+														<li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+														<li><a href="#"><i class="fa fa-heart"></i></a></li>
+														<li><a href="#"><i class="fa fa-plus"></i></a></li>
+														<li><a href="#"><i class="fa fa-expand"></i></a></li>
+												</ul>
+										</div>
+										<div class="part-2">
+												<h3 class="product-title">Here Product Title</h3>
+												<h4 class="product-old-price">$79.99</h4>
+												<h4 class="product-price">$49.99</h4>
+										</div>
+								</div>
+						</div>
+						<!-- Single Product -->
+						<div class="col-md-6 col-lg-4 col-xl-3">
+								<div id="product-2" class="single-product">
+										<div class="part-1">
+												<span class="discount">15% off</span>
+												<ul>
+														<li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+														<li><a href="#"><i class="fa fa-heart"></i></a></li>
+														<li><a href="#"><i class="fa fa-plus"></i></a></li>
+														<li><a href="#"><i class="fa fa-expand"></i></a></li>
+												</ul>
+										</div>
+										<div class="part-2">
+												<h3 class="product-title">Here Product Title</h3>
+												<h4 class="product-price">$49.99</h4>
+										</div>
+								</div>
+						</div>
+						<!-- Single Product -->
+						<div class="col-md-6 col-lg-4 col-xl-3">
+								<div id="product-3" class="single-product">
+										<div class="part-1">
+												<ul>
+														<li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+														<li><a href="#"><i class="fa fa-heart"></i></a></li>
+														<li><a href="#"><i class="fa fa-plus"></i></a></li>
+														<li><a href="#"><i class="fa fa-expand"></i></a></li>
+												</ul>
+										</div>
+										<div class="part-2">
+												<h3 class="product-title">Here Product Title</h3>
+												<h4 class="product-old-price">$79.99</h4>
+												<h4 class="product-price">$49.99</h4>
+										</div>
+								</div>
+						</div>
+						<!-- Single Product -->
+						<div class="col-md-6 col-lg-4 col-xl-3">
+								<div id="product-4" class="single-product">
+										<div class="part-1">
+												<span class="new">new</span>
+												<ul>
+														<li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+														<li><a href="#"><i class="fa fa-heart"></i></a></li>
+														<li><a href="#"><i class="fa fa-plus"></i></a></li>
+														<li><a href="#"><i class="fa fa-expand"></i></a></li>
+												</ul>
+										</div>
+										<div class="part-2">
+												<h3 class="product-title">Here Product Title</h3>
+												<h4 class="product-price">$49.99</h4>
+										</div>
+								</div>
+						</div>
+						<!-- Single Product -->
+						<div class="col-md-6 col-lg-4 col-xl-3">
+								<div id="product-1" class="single-product">
+										<div class="part-1">
+												<ul>
+														<li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+														<li><a href="#"><i class="fa fa-heart"></i></a></li>
+														<li><a href="#"><i class="fa fa-plus"></i></a></li>
+														<li><a href="#"><i class="fa fa-expand"></i></a></li>
+												</ul>
+										</div>
+										<div class="part-2">
+												<h3 class="product-title">Here Product Title</h3>
+												<h4 class="product-old-price">$79.99</h4>
+												<h4 class="product-price">$49.99</h4>
+										</div>
+								</div>
+						</div>
+						<!-- Single Product -->
+						<div class="col-md-6 col-lg-4 col-xl-3">
+								<div id="product-2" class="single-product">
+										<div class="part-1">
+												<span class="discount">15% off</span>
+												<ul>
+														<li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+														<li><a href="#"><i class="fa fa-heart"></i></a></li>
+														<li><a href="#"><i class="fa fa-plus"></i></a></li>
+														<li><a href="#"><i class="fa fa-expand"></i></a></li>
+												</ul>
+										</div>
+										<div class="part-2">
+												<h3 class="product-title">Here Product Title</h3>
+												<h4 class="product-price">$49.99</h4>
+										</div>
+								</div>
+						</div>
+						<!-- Single Product -->
+						<div class="col-md-6 col-lg-4 col-xl-3">
+								<div id="product-3" class="single-product">
+										<div class="part-1">
+												<ul>
+														<li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+														<li><a href="#"><i class="fa fa-heart"></i></a></li>
+														<li><a href="#"><i class="fa fa-plus"></i></a></li>
+														<li><a href="#"><i class="fa fa-expand"></i></a></li>
+												</ul>
+										</div>
+										<div class="part-2">
+												<h3 class="product-title">Here Product Title</h3>
+												<h4 class="product-old-price">$79.99</h4>
+												<h4 class="product-price">$49.99</h4>
+										</div>
+								</div>
+						</div>
+						<!-- Single Product -->
+						<div class="col-md-6 col-lg-4 col-xl-3">
+								<div id="product-4" class="single-product">
+										<div class="part-1">
+												<span class="new">new</span>
+												<ul>
+														<li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+														<li><a href="#"><i class="fa fa-heart"></i></a></li>
+														<li><a href="#"><i class="fa fa-plus"></i></a></li>
+														<li><a href="#"><i class="fa fa-expand"></i></a></li>
+												</ul>
+										</div>
+										<div class="part-2">
+												<h3 class="product-title">Here Product Title</h3>
+												<h4 class="product-price">$49.99</h4>
+										</div>
+								</div>
+						</div>
+				</div>
+		</div>
+</section>
+</section>    
+
+<section id="review">
+  <h1 class="text-center">
+    Reviews
+  </h1>
+  <div class="container" style="align-items: center;justify-content: center;padding-bottom: 100px; padding-top: 20px;">
+
+
+  <div class="row row-cols-1 row-cols-md-3 g-4">
+
+    <div class="col">
+      <div class="card" style="border: 2px solid black; padding: 20px;border-radius: 10px;">
+        <img src="https://randomuser.me/api/portraits/men/13.jpg" class="card-img-top" alt="..." style="height: 200px; width: 200px;display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%; border-radius: 50%;">
+        <div class="card-body">
+          <h5 class="card-title text-center">John Doe</h5>
+          <p class="card-text">
+            They give for reasonable prices for all the baking and decorating items at Hsr layout.
+            My all requirement was full filled by them with fast delivery.
+        </p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card" style="border: 2px solid black; padding: 20px;border-radius: 10px;">
+        <img src="https://randomuser.me/api/portraits/men/13.jpg" class="card-img-top" alt="..." style="height: 200px; width: 200px;display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%; border-radius: 50%;">
+        <div class="card-body">
+          <h5 class="card-title text-center">John Doe</h5>
+          <p class="card-text">
+            They give for reasonable prices for all the baking and decorating items at Hsr layout.
+            My all requirement was full filled by them with fast delivery.
+        </p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card" style="border: 2px solid black; padding: 20px;border-radius: 10px;">
+        <img src="https://randomuser.me/api/portraits/men/13.jpg" class="card-img-top" alt="..." style="height: 200px; width: 200px;display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%; border-radius: 50%;">
+        <div class="card-body">
+          <h5 class="card-title text-center">John Doe</h5>
+          <p class="card-text">
+            They give for reasonable prices for all the baking and decorating items at Hsr layout.
+            My all requirement was full filled by them with fast delivery.
+        </p>
+        </div>
+      </div>
+    </div>
+   
+  </div>
+</div>
+</div>
+</section>
+
+    
+
+      <!-- newsletter section  -->
+    <div class="container" id="contact">
+        <div class="row justify-content-between">
+            <div class="col-xl-6 col-lg-6">
+                <h2 class="title m-0">Sign Up For Our Newsletter</h2>
+                <p>Subscribe our newsletter and get discount 10% Off</p>
+            </div>
+            <div class="col-xl-6 col-lg-6">
+              <div class="newsletter" style="margin-top: 20px;">
+                <input type="text" style="margin-right: 100px; padding: 15px; height: 60px; max-width: 50%; width: 500px; border-radius: 30px;margin-bottom: 10px; border-color: gray;"
+                
+                 name="email" placeholder="Search for our newsletter...">
+                <button type="submit" style="background-color: #351916;height: 56px;min-width: 174px;text-align: center;color:white;border-radius: 28px;">Subscribe
+                    Now</button>
+              </div>
+            </div>
+            
+        </div>
+
+        <div class="row justify-content-between">
+            <div class="col-4">
+              All India Shipping
+              <p>
+                Duis autem vel eum iriure dolor in hendrerit velit esse molestie consequat.
+              </p>
+            </div>
+            <div class="col-4">
+              Online Support 24/7
+              <p>Duis autem vel eum iriure dolor in hendrerit velit esse molestie consequat.</p>
+            </div>
+        </div>
+    </div>
+      <!-- end of newsletter section  -->
+
+
+    
+
+
+
+    <!-- footer section  -->
+      <section id="footer">
+        <footer class="footer">
+            <div class="container">
+              <div class="row">
+                <div class="col-12 col-md-3" style="margin-bottom: 30px;">
+                  <div class="img">
+                      <img class="footer-logo" src="https://bakershoppe.com/assets/img/logo/logo1.png" alt="" srcset="">
+                  </div>
+                  <div class="desc" >
+                    Latest baking supplies, innovative products and new brands, here are the latest baking trends you need to catch on. We tie up with the best bakery suppliers to offer the newest and trending products in our store.
+                  </div>
+                </div>
+                <div class="col">
+                  <h4>MY ACCOUNT</h4>
+                  <ul>
+                    <li><a href="#about-us">My account</a></li>
+                    <li><a href="#about-us">Checkout</a></li>
+                    <li><a href="#about-us">Shop</a></li>
+                    <li><a href="#about-us">Wishlist</a></li>
+                    <li><a href="#about-us">Contact</a></li>
+                    <li><a href="#about-us">Privacy Policy</a></li>
+                  </ul>
+                </div>
+                <div class="col">
+                  <h4>CATEGORIS</h4>
+                  <ul>
+                    <li><a href="#games">Kitchenware</a></li>
+                    <li><a href="#games">Ingredients</a></li>
+                    <li><a href="#gaems">Bakeware</a></li>
+                    <li><a href="#games">Display & Decoration</a></li>
+                    <li><a href="#games">Disposable</a></li>
+                  </ul>
+                </div>
+                <!-- <div class="col">
+                  <h4>Get Help</h4>
+                  <ul>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Contest Information</a></li>
+                    <li><a href="#">Rules</a></li>
+                    <li><a href="#">Guidelines</a></li>
+                  </ul>
+                </div> -->
+                <div class="col">
+                  <h4>COMPANY INFO</h4>
+                    <h5>Address : </h5><h6>
+                        ground floor, No 434, 17th Cross Road, Sector 4,
+                        HSR Layout, Bengaluru, Karnataka 560102
+                        <br>
+                    </h6>
+                    <h5>Phone : </h5><h6>
+                        +91-76766125552
+                    </h6>
+                </div>
+              </div>
+            </div>
+          </footer>
+      </section>
+      <div class="payment-icon container" style="margin-bottom: 10px; margin-top: 10px;">
+        <div class="row">
+            <div class="col-auto me-auto">
+                <div class="social-links">
+                    <a  href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook"></i></a>
+                    <a href="https://twitter.com/?lang=en" target="_blank"><i class="fa fa-instagram"></i></a>
+                    <a href="https://www.instagram.com/" target="_blank"><i class="fa fa-whatsapp"></i></a>
+                </div>
+            </div>
+            <div class="col-auto">
+                <div class="social-links">
+                    <a  href="https://www.facebook.com/" target="_blank"><i class="fa fa-cc-visa"></i></a>
+                    <a  href="https://www.facebook.com/" target="_blank"><i class="fa fa-cc-mastercard"></i></a>
+                    <a href="https://twitter.com/?lang=en" target="_blank"><i class="fa fa-cc-paypal"></i></a>
+                    <a href="https://www.instagram.com/" target="_blank"><i class="fa fa-cc-amazon-pay"></i></a>
+
+                </div>
+            </div>
+          </div>
+      </div>
+      <div class="text-center p-3 copyright" style="background-color: #351916; color:white;">
+        Copyright © 2021 Bakershoppe. All Rights Reserved | Design & Developed by acttconnect.com
+      </div>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+    <script>
+      filterSelection("all") // Execute the function and show all columns
+function filterSelection(c) {
+  var x, i;
+  x = document.getElementsByClassName("column");
+  if (c == "all") c = "";
+  // Add the "show" class (display:block) to the filtered elements, and remove the "show" class from the elements that are not selected
+  for (i = 0; i < x.length; i++) {
+    w3RemoveClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+  }
+}
+
+// Show filtered elements
+function w3AddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {
+      element.className += " " + arr2[i];
+    }
+  }
+}
+
+// Hide elements that are not selected
+function w3RemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1);
+    }
+  }
+  element.className = arr1.join(" ");
+}
+
+// Add active class to the current button (highlight it)
+var btnContainer = document.getElementById("myBtnContainer");
+var btns = btnContainer.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function(){
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+
+
+
+$(document).ready(function() {
+$(window).scroll(function() {
+if ($(this).scrollTop() > 20) {
+$('#toTopBtn').fadeIn();
+} else {
+$('#toTopBtn').fadeOut();
+}
+});
+
+$('#toTopBtn').click(function() {
+$("html, body").animate({
+scrollTop: 0
+}, 1000);
+return false;
+});
+});
+
+
+    </script>
+  </body>
+</html>
